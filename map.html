@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Layout</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff; /* Light blue background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+            text-align: center; /* Center-align the text */
+        }
+        
+
+        .container {
+            display: flex;
+            justify-content: space-between; /* Aligns the images with space between */
+            align-items: flex-start; /* Aligns images at the top */
+            padding: 20px; /* Adds some padding around the container */
+        }
+
+        .image-box {
+            text-align: center; /* Centers the image and paragraph inside the box */
+            flex-basis: 30%; /* Gives each image box some width to maintain the layout */
+        }
+
+        img {
+            width: 100%; /* Makes the image responsive and fill the box */
+            max-width: 600px; /* Sets a max width for images */
+            height: auto; /* Maintains aspect ratio */
+            margin: 10px 0; /* Adds margin around images */
+        }
+
+        p {
+            font-size: 16px; /* Set font size for paragraphs */
+            color: #333; /* Set text color */
+        }
+
+        a {
+            font-size: 1.2em; /* Sets the font size of the link */
+            color: #00008b; /* Sets the color of the link */
+            text-decoration: none; /* Removes underline from the link */
+            margin-top: 20px;
+            display: inline-block; /* Allows for margin and display to behave properly */
+        }
+
+        a:hover {
+            color: #ff4500; /* Color change on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="image-box">
+            <img src="Far.png" alt="Left Image">
+            <p>Location of Culture Center of the Philippines
+        </div>
+
+        <div class="image-box">
+            <img src="Build.png" alt="Center Image">
+            <p>Outside building of TIG
+              
+        </div>
+
+        <div class="image-box">
+            <img src="In.png" alt="Right Image">
+            <p> Inside layout of TIG</p>
+        </div>
+    </div>
+
+    <p><a href="safety.html">Makasiguraduhang safety</a></p>
+
+
+    <p><a href="get-to-know-us.html">Go back</a></p>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eksena para sa proyekto</title>
+    <style>
+            
+        
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f8ff; /* Light blue background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+        
+
+        background-color: #f0f8ff; /* Light blue background */
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+            grid-gap: 20px;
+            justify-items: center;
+            margin-top: 30px;
+        }
+
+        .image-box {
+            text-align: center;
+        }
+
+        img {
+            width: 600px; /* Adjust the image size */
+            height: auto;
+            border-radius: 8px;
+        }
+
+        /* Second row images */
+        .image-box:nth-child(4) {
+            grid-column: 1; /* Bottom-left image */
+        }
+
+        .image-box:nth-child(5) {
+            grid-column: 2; /* Bottom-center image */
+        }
+
+        /* Place Image 5 in the third column of the second row (grid position 6) */
+        .image-box:nth-child(6) {
+            grid-column: 3; /* Bottom-right image */
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Eksena para sa proyekto</h1>
+
+    <div class="container">
+        <!-- First row (top left, top center, top right) -->
+        <div class="image-box">
+            <img src="1.jpg" alt="Image 1">
+            <p>Eksena 1</p>
+        </div>
+        <div class="image-box">
+            <img src="2.jpg" alt="Image 2">
+            <p>Eksena 2</p>
+        </div>
+        <div class="image-box">
+            <img src="3.jpg" alt="Image 3">
+            <p>Eksena 3</p>
+        </div>
+
+        <!-- Second row (bottom left, bottom center, bottom right) -->
+        <div class="image-box">
+            <img src="4.jpg" alt="Image 4">
+            <p>Eksena 4</p>
+        </div>
+        <div class="image-box">
+            <img src="5.jpg" alt="Image 5">
+            <p>Eksena 5</p>
+        </div>
+    </div>
+
+    <p><a href="joaquin.html">Go back</a></p>
+
+</body>
+</html>
